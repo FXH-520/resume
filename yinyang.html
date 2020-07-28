@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八卦图</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        #yinyang {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to bottom, white 0%, white 50%, black 50%, black 100%);
+            border-radius: 50%;
+            margin: 100px auto 50px;
+            animation: rotate 3s linear infinite ;
+        }
+
+        #yinyang::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            border: 40px solid black;
+        }
+
+        #yinyang::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            border: 40px solid white;
+        }
+        p {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="yinyang"></div>
+    <p>道生一，一生二，二生三，三生万物</p>
+</body>
+
+</html>
