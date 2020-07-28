@@ -1,0 +1,202 @@
+body {
+    background: #efefef;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('fonts/iconfont.eot');
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/iconfont.woff2') format('woff2'), 
+         url('fonts/iconfont.woff') format('woff'), 
+         url('fonts/iconfont.ttf') format('truetype'), 
+         url('fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.topNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.topNavBar nav {
+    padding-top: 7px;
+}
+
+.topNavBar-inner {
+    padding: 0 16px;
+}
+
+.topNavBar .logo {
+    float: left;
+}
+
+.topNavBar nav>ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topNavBar nav>ul>li {
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.topNavBar nav>ul>li>a {
+    font-size: 12px;
+    color: #b7b7b7;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.topNavBar nav>ul>li>a:hover {
+    border-bottom: 3px solid #e06567;
+}
+
+.topNavBar .logo {
+    font-size: 24px;
+    font-family: 'Arial Black';
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.topNavBar .logo .rs {
+    margin-right: 4px;
+    color: #e6686a;
+}
+
+.topNavBar .logo .card {
+    color: #9a9da2;
+}
+
+.banner {
+    height: 515px;
+    background-image: url(images/bg.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner .mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.usercard {
+    position: absolute;
+    top: 315px;
+    left: 200px;
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.usercard .welcome {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #e6686a;
+    padding: 4px 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.usercard .welcome .triangle {
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    border-top-width: 0;
+    border-left-color: #e6686a;
+}
+
+.usercard .picture {
+    float: left;
+}
+
+.usercard .text {
+    float: left;
+    margin-left: 65px;
+    width: 470px;
+}
+
+.usercard .text h1 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.usercard .text hr {
+    border: 0px;
+    border-top: 1px solid #dedede;
+    margin: 20px 0;
+}
+
+.usercard .pictureAndText {
+    padding: 50px;
+}
+
+.usercard dl dt, .usercard dl dd {
+    float: left;
+    padding: 5px 0;
+}
+
+.usercard dl dt {
+    width: 30%;
+    font-weight: 700;
+}
+
+.usercard dl dd {
+    margin: 0;
+    width: 70%;
+    color: #9da0a7;
+}
+.usercard .media {
+    background-color: #e6686a;
+    text-align: center;
+}
+.usercard .media a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 16px;
+}
+.usercard .media a:hover{
+    background-color: #cf5f5f;
+}
